@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GoogleMapsServicesTestApp"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="GoogleMapsServicesTestApp.MainPage">
+    <ContentPage.Content>
+        <StackLayout
+        Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Public Place Name: "></Label>
+                <Entry x:Name="PublicPlaceName" Placeholder="Rua São João Evangelista"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Location Number: "></Label>
+                <Entry x:Name="LocationNumber" Placeholder="411"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="City Name: "></Label>
+                <Entry x:Name="CityName" Placeholder="City Name" ></Entry>
+            </StackLayout>
+
+            <Button x:Name="Search" Text="Search"></Button>
+            <Label x:Name="Result" IsEnabled="False"
+                    VerticalOptions="Start"></Label>
+            <StackLayout x:Name="ResultsPanel" Orientation="Vertical"></StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
